@@ -10,11 +10,10 @@ export class CalculatorComponent {
 
   mostrar:boolean = false;
 
-
   //recibimos resultado del hijo
-  @Input() resultFather: number | string = "";
+  resultFather: number | string = "";
 
-  
+
 
 
 }

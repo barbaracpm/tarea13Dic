@@ -24,7 +24,7 @@ result: number | string = "";
 checkValues(): any {
   if(this.values.value1.trim().length !== 0 && this.values.value2.trim().length !== 0) {
     return {value1: parseInt(this.values.value1), value2:parseInt(this.values.value2)};
-  }
+  } 
 
   return;
 
