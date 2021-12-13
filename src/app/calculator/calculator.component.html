@@ -1,0 +1,5 @@
+<!--pasamos la info al padre con (changeResult)-->
+<app-calculate (changeResult)="resultFather = $event"></app-calculate>
+<button type="button" (click) = "mostrar = !mostrar">Mostrar/Ocultar resultado</button>
+<!--el hijo recibe info del padre [resultSon]-->
+<app-show-result *ngIf="mostrar" [resultSon] = "resultFather"></app-show-result>
