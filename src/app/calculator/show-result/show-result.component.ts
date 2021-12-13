@@ -11,9 +11,9 @@ export class ShowResultComponent {
   //recibimos resultado del padre
   @Input() resultSon: number | string = "";
 
-    //construye e inicia el componente. Se ejecuta una única vez. En general llevaría dentro las variables de la clase. Primero en ejecutarse.
+  //construye e inicia el componente. Se ejecuta una única vez. En general llevaría dentro las variables de la clase. Primero en ejecutarse.
   constructor() {
-    console.log("Componente montado con constructor");
+    console.log("Componente ShowResult montado con constructor");
   }
 
   //2º en ejecutarse si hay un valor @Input() en la clase. Y se ejecutará cada vez que este valor cambie y lo recibamos del padre.
@@ -23,12 +23,12 @@ export class ShowResultComponent {
 
     //Es una especie de constructor interno, inicializador de todo el contenido del componente. Se ejecuta una única vez. Sirve como constructor si queremos hacer modificaciones en contenidos del DOM.
   ngOnInit() {
-    console.log("ngOnInit. Componente iniciado");
+    console.log("ngOnInit. Componente showResult iniciado");
 
   }
   //Se ejecuta cada vez que detecta cualquier cambio en el componente (aunque no sea de un @Input)
   ngDoCheck() {
-    console.log("ngDoCheck. Se ha detectado cualquier cambio en el componente");
+    console.log("ngDoCheck. Se ha detectado cualquier cambio en el componente showResult");
   }
 
 //Se ejecuta al destruir el componente

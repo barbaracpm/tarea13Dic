@@ -14,4 +14,7 @@ export class CalculatorComponent {
   //recibimos resultado del hijo
   @Input() resultFather: number | string = "";
 
+  
+
+
 }
